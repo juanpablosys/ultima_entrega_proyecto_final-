@@ -1,0 +1,287 @@
+/*
+ 00.HTML GENERAL
+ -------------------------------------------------------------------
+ */
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: "Roboto", sans-serif;
+}
+
+ul {
+   list-style-type: none;
+}
+
+a {
+   text-decoration: none;
+   color: black;
+}
+
+.grid__container {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: auto auto auto auto;
+   grid-template-areas: "header header header" "main main main" "footer footer footer";
+}
+
+/*
+ 01.HEADER
+ -------------------------------------------------------------------
+ */
+
+.header {
+   display: flex;
+   grid-area: header;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem 8rem;
+   font-size: 18px;
+   border-bottom: 1px solid black;
+}
+
+.header__nav {
+   display: flex;
+}
+
+.header__img {
+   width: 150px;
+}
+
+.header__nav ul li {
+   display: inline-block;
+   margin-left: 2rem;
+   text-transform: uppercase;
+}
+
+/*
+ 02.HERO
+ -------------------------------------------------------------------
+ */
+
+.main {
+   display: flex;
+   grid-area: main;
+   justify-content: center;
+   align-items: center;
+   padding: 1rem 8rem;
+   gap: 10rem;
+}
+
+.main__curso__h1 {
+   display: inline;
+   font-size: 70px;
+   padding: 1rem 8rem;
+   gap: 10rem;
+}
+
+.main__h1 {
+   font-size: 70px;
+}
+
+.main__img {
+   width: 800px;
+}
+
+.main__hero {
+   width: 100%;
+}
+
+.main__hero__h1 {
+   font-size: 70px;
+   margin-bottom: 2rem;
+}
+
+.main__hero__h2 {
+   font-size: 35px;
+   margin-bottom: 2rem;
+   margin-top: 2rem;
+}
+
+.main__hero__h3 {
+   font-size: 30px;
+   margin-bottom: 2rem;
+   margin-top: 2rem;
+}
+
+.main__hero__p {
+   font-size: 20px;
+   margin-bottom: 2rem;
+   margin-top: 2rem;
+}
+
+.main__hero__img {
+   width: 800px;
+}
+
+.main__faq {
+   align-items: left;
+   padding: 1rem 8rem;
+   gap: 10rem;
+}
+
+.form__item {
+   width: 100%;
+   padding: 5px;
+   margin-top: 10px;
+   font-family: "Roboto", sans-serif;
+}
+
+/*
+ 03.FOOTER
+ -------------------------------------------------------------------
+ */
+
+.footer {
+   grid-area: footer;
+   border-top: 1px solid black;
+   text-align: center;
+}
+
+.footer__main {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem 8rem;
+}
+
+.footer__socialNetworks {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 1rem;
+}
+
+.footer__socialNetworks__img {
+   width: 50px;
+}
+
+.footer__img {
+   width: 150px;
+}
+
+.footer__span {
+   font-size: 15px;
+   padding: 1rem 8rem;
+}
+
+/*
+ 04.MEDIA QUERIES
+ -------------------------------------------------------------------
+ */
+
+@media screen and (max-width: 768px) {
+   body {
+      background-color: brown;
+   }
+
+   .header {
+      display: block;
+   }
+
+   .header__nav {
+      padding-top: 20px;
+   }
+
+   .main {
+      display: block;
+      padding: 1rem 1rem;
+      text-align: center;
+   }
+
+   .main__h1 {
+      font-size: 50px;
+   }
+
+   .main__h2 {
+      font-size: 25px;
+   }
+
+   .main__faq {
+      padding: 1rem 1rem;
+      text-align: center;
+   }
+
+   .main__hero {
+      text-align: center;
+   }
+
+   .main__hero__img {
+      width: 350px;
+   }
+
+   .main__hero__h1 {
+      font-size: 50px;
+   }
+
+   .main__hero__h2 {
+      font-size: 30px;
+   }
+   .main__hero__h3 {
+      font-size: 20px;
+   }
+
+   .main__img {
+      width: 350px;
+   }
+
+   .main__curso__h1 {
+      font-size: 50px;
+   }
+
+   .footer__main {
+      display: block;
+   }
+
+   .footer__socialNetworks {
+      padding-top: 20px;
+   }
+
+   .footer__span {
+      padding: 1rem 1rem;
+   }
+}
+
+@media screen and (min-width: 768px) {
+   body {
+      background-color: blue;
+   }
+
+   .main {
+      display: block;
+      padding: 1rem 1rem;
+      text-align: center;
+   }
+
+   .main__img {
+      width: 600px;
+   }
+
+   .main__hero__img {
+      width: 600px;
+   }
+}
+
+@media screen and (min-width: 1024px) {
+   body {
+      background-color: green;
+   }
+
+   .main {
+      display: flex;
+      padding: 1rem 1rem;
+      text-align: center;
+   }
+
+   .main__hero__img {
+      width: 800px;
+   }
+
+   .main__img {
+      width: 800px;
+   }
+}
