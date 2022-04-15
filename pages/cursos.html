@@ -5,67 +5,90 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../icons/favicon.png" type="image/x-icon" />
+      <!--BOOTSTRAP CSS-->
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+         crossorigin="anonymous"
+      />
       <link rel="stylesheet" href="../css/style.css" />
       <link
          href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
          rel="stylesheet"
       />
-      <title>Cursos</title>
+   <title>Nosotros</title>
    </head>
-
    <body>
-      <!--HEADER-->
       <header class="header">
-         <a href="../index.html">
-            <img class="header__img" src="../images/logo.png" alt="Logo de la organizacion" />
-         </a>
-         <nav class="header__nav">
-            <ul>
-               <li>
-                  <a href="../index.html">Inicio</a>
-               </li>
-               <li>
-                  <a href="nosotros.html">Nosotros</a>
-               </li>
-               <li>
-                  <a href="cursos.html">Cursos</a>
-               </li>
-               <li>
-                  <a href="faq.html">FAQ</a>
-               </li>
-               <li>
-                  <a href="contacto.html">Contacto</a>
-               </li>
-            </ul>
-         </nav>
-      </header>
+      <div class="container">
+         <!--HEADER-->
+               <nav class="navbar navbar-expand-md navbar-light text-center">
+                  <div class="container">
+                     <a class="navbar-brand transition" href="../index.html">
+                        <img class="header__img" src="../images/logo.png" alt="Logo de la organizacion" />
+                     </a>
+                     <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                     >
+                        <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                           <li class="nav-item">
+                              <a class="nav-link " href="../index.html">Inicio</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="nosotros.html">Nosotros</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link active" href="cursos.html">Cursos</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="faq.html">FAQ</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="contacto.html">Contacto</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </nav>
+         </div>
+         </header>
       <!--MAIN-->
       <main>
-         <h1 class="main__curso__h1">Cursos</h1>
-         <div class="main">
-            <div class="main__hero">
-               <div>
-                  <h2 class="main__hero__h2">Personal trainer y musculacion</h2>
+         <div class="container">
+            <div class="row py-4">
+               <h1>Cursos</h1>
+               <div class="col-md-6 col-lg-4 text-center">
+                  <h2>Personal trainer</h2>
                   <img
-                     class="main__hero__img"
+                     class="container-fluid"
                      src="../images/curso_1.jpg"
                      alt="Imagen del curso 1"
                   />
-                  <p class="main__hero__p">
+                  <p class="lead">
                      En este curso aprenderás Ejercicios para los diferentes grupos musculares,
                      incremento de fuerza, potencia y resistencia. Armado de rutinas para descenso
                      de peso, tonificación y aumento de masa muscular. Entrenamiento al aire libre
                      Preparación física. Entrenamiento Funcional.
                   </p>
                </div>
-               <div>
-                  <h2 class="main__hero__h2">Fitness dance</h2>
+               <div class="col-md-6 col-lg-4 text-center">
+                  <h2>Fitness dance</h2>
                   <img
-                     class="main__hero__img"
+                     class="container-fluid"
                      src="../images/curso_2.jpg"
                      alt="Imagen del curso 2"
                   />
-                  <p class="main__hero__p">
+                  <p class="lead">
                      En este curso aprenderás las diferencias entre los distintos programas de
                      interpretación musical: Zumba, Baile Activo, Sh`Bam, Mega Dance. Todo lo
                      necesario para dar excelentes clases de Fitness Dance, ser un profesor exitoso,
@@ -74,14 +97,14 @@
                      motivación Practica de como dictar una clase, shows o animaciones.
                   </p>
                </div>
-               <div>
-                  <h2 class="main__hero__h2">Entrenamiento funcional</h2>
+               <div class="col-md-6 col-lg-4 text-center">
+                  <h2>Entrenamiento funcional</h2>
                   <img
-                     class="main__hero__img"
+                     class="container-fluid"
                      src="../images/curso_3.jpg"
                      alt="Imagen del curso 3"
                   />
-                  <p class="main__hero__p">
+                  <p class="lead">
                      En este curso aprenderas las Diferencias de los distintos programas: Crossfit,
                      Funtional Training, Hiit, Cross Training. Parte practica: Ejercicios de
                      levantamiento olímpico (Envión, Cargadas, Arrancadas, Dos tiempos). Ejercicios
@@ -94,42 +117,38 @@
       </main>
       <!--FOOTER-->
       <footer class="footer">
-         <div class="footer__main">
-            <a href="../index.html">
-               <img class="footer__img" src="../images/logo.png" alt="Logo de la organizacion" />
-            </a>
-            <div class="footer__socialNetworks">
+         <div class="container">
+            <div class="d-sm-flex justify-content-between align-items-center text-center pt-3 pl-2 pr-2">
+            <div>
+               <a href="../index.html">
+               <img class="footer__img mb-4" src="../images/logo.png" alt="Logo de la organizacion" />
+               </a>
+            </div>
+            <div class="mb-4">
                <a href="">
-                  <img
-                     class="footer__socialNetworks_img"
-                     src="../icons/facebook.png"
-                     alt="Link a facebook"
-                  />
+                  <img src="../icons/facebook.png" alt="Link a facebook" />
                </a>
                <a href="">
-                  <img
-                     class="footer__socialNetworks_img"
-                     src="../icons/instagram.png"
-                     alt="Link a instagram"
-                  />
+                  <img src="../icons/instagram.png" alt="Link a instagram" />
                </a>
                <a href="">
-                  <img
-                     class="footer__socialNetworks_img"
-                     src="../icons/whatsapp.png"
-                     alt="Link a whatsapp"
-                  />
+                  <img src="../icons/whatsapp.png" alt="Link a whatsapp" />
                </a>
                <a href="">
-                  <img
-                     class="footer__socialNetworks_img"
-                     src="../icons/youtube.png"
-                     alt="Link a youtube"
-                  />
+                  <img src="../icons/youtube.png" alt="Link a youtube" />
                </a>
             </div>
          </div>
-         <span class="footer__span">Creado por juanpablosys</span>
+         <div class="text-center pb-3">
+            <span><h5>Creado por juanpablosys</h5></span>
+         </div>
       </footer>
-   </body>
+      <!--BOOTSTRAP JS-->
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+         crossorigin="anonymous"
+      ></script>
+   </div>
+</body>
 </html>

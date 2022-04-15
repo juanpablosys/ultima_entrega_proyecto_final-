@@ -12,22 +12,21 @@
          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
          crossorigin="anonymous"
       />
-      <!--<link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/style.css" />
       <link
          href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
          rel="stylesheet"
-      />-->
-      <title>Inicio</title>
+      />
+   <title>Inicio</title>
    </head>
-
    <body>
+      <header class="header">
       <div class="container">
          <!--HEADER-->
-         <header>
                <nav class="navbar navbar-expand-md navbar-light text-center">
                   <div class="container">
-                     <a class="navbar-brand" href="index.html">
-                        <img src="images/logo.png" alt="Logo de la organizacion" />
+                     <a class="navbar-brand transition" href="index.html">
+                        <img class="header__img" src="images/logo.png" alt="Logo de la organizacion" />
                      </a>
                      <button
                         class="navbar-toggler"
@@ -61,12 +60,12 @@
                      </div>
                   </div>
                </nav>
-            </div>
+         </div>
          </header>
          <!--MAIN-->
          <main>
             <div class="container">
-               <div class="row">
+               <div class="row py-4">
                   <div class="col-md-6 col-lg-8">
                      <h1>Escuela Fit</h1>
                      <p class="lead">
@@ -82,9 +81,9 @@
                      industria del Fitness
                      </p>
                   </div>
-                  <div class="col-md-6 col-lg-4">
+                  <div class="col-md-6 col-lg-4 align-self-center">
                      <img
-                     class="container-fluid"
+                     class="container-fluid main__img"
                      src="images/fittness_principal.jpg"
                      alt="Personas realizando actividad fisica"/>
                   </div>
@@ -92,15 +91,15 @@
             </div>
          </main>
          <!--FOOTER-->
-         <footer>
+         <footer class="footer">
             <div class="container">
-               <div class="d-sm-flex justify-content-between align-items-center text-center">
+               <div class="d-sm-flex justify-content-between align-items-center text-center pt-3 pl-2 pr-2">
                <div>
                   <a href="index.html">
-                  <img src="images/logo.png" alt="Logo de la organizacion" />
+                  <img class="footer__img mb-4" src="images/logo.png" alt="Logo de la organizacion" />
                   </a>
                </div>
-               <div>
+               <div class="mb-4">
                   <a href="">
                      <img src="icons/facebook.png" alt="Link a facebook" />
                   </a>
@@ -115,9 +114,8 @@
                   </a>
                </div>
             </div>
-            <div class="text-center">
-               <span>Creado por juanpablosys</span>
-            </div>
+            <div class="text-center pb-3">
+               <span><h5>Creado por juanpablosys</h5></span>
             </div>
          </footer>
          <!--BOOTSTRAP JS-->
@@ -126,7 +124,6 @@
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"
          ></script>
-      </div>
       </div>
    </body>
 </html>
