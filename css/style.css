@@ -2,81 +2,83 @@
  00.HTML GENERAL
  -------------------------------------------------------------------
  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 a:hover {
-   font-weight: bold;
-   font-size: x-large;
-   letter-spacing: 2px;
+  font-weight: bold;
+  font-size: x-large;
+  letter-spacing: 2px;
 }
 
 /*
  01.HEADER
  -------------------------------------------------------------------
  */
-
 .header {
-   border-bottom: 1px solid black;
-   background: linear-gradient(to bottom, #3f779d, #b9cedc);
+  border-bottom: 1px solid black;
+  background: linear-gradient(to bottom, #3f779d, #b9cedc);
 }
-
 .header__img {
-   width: 150px;
-   border-radius: 30px;
+  width: 150px;
+  border-radius: 30px;
 }
 
 .transition {
-   transition-property: opacity;
-   transition-duration: 1s;
+  transition-property: opacity;
+  transition-duration: 1s;
 }
-
 .transition:hover {
-   opacity: 0.2;
+  opacity: 0.2;
 }
 
 /*
  02.HERO
  -------------------------------------------------------------------
  */
-
+.main {
+  align-items: center;
+}
 .main__img {
-   animation: show-from-center 4s ease;
+  animation: show-from-center 4s ease;
 }
 
 .form__item {
-   width: 100%;
-   padding: 5px;
-   margin-top: 10px;
-   font-family: "Roboto", sans-serif;
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
 }
 
 /*
  03.FOOTER
  -------------------------------------------------------------------
  */
-
 .footer {
-   border-top: 1px solid black;
-   background: linear-gradient(to top, #3f779d, #b9cedc);
+  border-top: 1px solid black;
+  background: linear-gradient(to top, #3f779d, #b9cedc);
 }
-
 .footer__img {
-   width: 150px;
-   border-radius: 30px;
+  width: 150px;
+  border-radius: 30px;
 }
 
 /*
  04.KEY FRAMES
  -------------------------------------------------------------------
  */
-
 @keyframes show-from-center {
-   0% {
-      opacity: 0;
-      transform: translateZ(70px);
-   }
-
-   100% {
-      opacity: 1;
-      transform: translateZ(0px);
-   }
+  0% {
+    opacity: 0;
+    transform: translateZ(70px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateZ(0px);
+  }
 }
+
+/*# sourceMappingURL=style.css.map */
