@@ -1,0 +1,4 @@
+@mixin img_size($witdth, $bradius) {
+   width: $witdth;
+   border-radius: $bradius;
+}

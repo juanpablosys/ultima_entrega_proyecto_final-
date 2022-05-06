@@ -46,11 +46,15 @@ a:hover {
   animation: show-from-center 4s ease;
 }
 
-.form__item {
+.form__item, .form__item__textarea {
   width: 100%;
   padding: 5px;
   margin-top: 10px;
   font-family: "Roboto", sans-serif;
+}
+
+.form__item__textarea {
+  border-color: black;
 }
 
 /*

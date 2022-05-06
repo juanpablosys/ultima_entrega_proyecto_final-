@@ -1,13 +1,12 @@
 @import "variables";
+@import "mixins";
+
 /*
  00.HTML GENERAL
  -------------------------------------------------------------------
  */
-* {
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
-}
+
+@import "resets";
 
 a:hover {
    font-weight: bold;
@@ -29,8 +28,7 @@ a:hover {
    );
 
    &__img {
-      width: 150px;
-      border-radius: 30px;
+      @include img_size(150px, 30px);
    }
 }
 
@@ -63,6 +61,11 @@ a:hover {
    font-family: $font_family_primary;
 }
 
+.form__item__textarea {
+   @extend .form__item;
+   border-color: black;
+}
+
 /*
  03.FOOTER
  -------------------------------------------------------------------
@@ -77,8 +80,7 @@ a:hover {
    );
 
    &__img {
-      width: 150px;
-      border-radius: 30px;
+      @include img_size(150px, 30px);
    }
 }
 
@@ -89,12 +91,12 @@ a:hover {
 
 @keyframes show-from-center {
    0% {
-      opacity: 0;
-      transform: translateZ(70px);
+      opacity: map-get($show-from-center-parameters, opacity_start);
+      transform: map-get($show-from-center-parameters, transform_start);
    }
 
    100% {
-      opacity: 1;
-      transform: translateZ(0px);
+      opacity: map-get($show-from-center-parameters, opacity_end);
+      transform: map-get($show-from-center-parameters, transform_end);
    }
 }
