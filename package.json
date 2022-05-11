@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/juanpablosys/segunda_entrega_proyecto_final/issues"
   },
-  "homepage": "https://github.com/juanpablosys/segunda_entrega_proyecto_final#readme"
+  "homepage": "https://github.com/juanpablosys/segunda_entrega_proyecto_final#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
 }

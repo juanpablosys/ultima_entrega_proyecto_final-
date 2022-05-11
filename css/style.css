@@ -6,6 +6,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 a:hover {
@@ -50,11 +51,24 @@ a:hover {
   width: 100%;
   padding: 5px;
   margin-top: 10px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .form__item__textarea {
   border-color: black;
+}
+
+.map_responsive {
+  overflow: hidden;
+  padding-bottom: 50%;
+  position: relative;
+}
+.map_responsive__iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 /*
